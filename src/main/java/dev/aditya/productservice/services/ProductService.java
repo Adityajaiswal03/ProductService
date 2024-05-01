@@ -2,9 +2,11 @@ package dev.aditya.productservice.services;
 import java.util.*;
 
 import dev.aditya.productservice.Dto.FakeStoreDTO;
-import dev.aditya.productservice.models.product;
+import dev.aditya.productservice.models.Product;
 public interface ProductService {
-    product getProductById(Long id);
-    List<FakeStoreDTO> getProducts();
-    FakeStoreDTO updateProduct(Long id, FakeStoreDTO product);
+    Product getProductById(Long id);
+    List<Product> getProducts();
+    Product updateProduct(Long id, Product product);
+    public Product createProduct(Product product);
+
 }
